@@ -65,24 +65,24 @@ C. Tabel items
     Soal 4 
 
 A. Mengambil Data users 
-Menampilkan Semua data Pada Tabel users kecuali password
+Menampilkan Semua data Pada Tabel users
     
     SELECT name,email
     FROM users;
 
 B. Mengambil Data items
-Menampilkan data item pada table items yang memiliki harga di atas 1000000 (1 juta)
+Menampilkan data item pada table items
     
     SELECT * FROM items
     WHERE price > 1000000;
 
-Menampilkan data item pada tabel items yang name nya serupa dengan keyword "Uniklooh" 
+Menampilkan data item pada tabel items
 
     SELECT * FROM items
     WHERE name LIKE 'Uniklooh';
 
 C. Menampilkan data items join dengan kategori
-Menampilkan data items yang dilengkapi dengan data nama kategori di masing-masing items
+Menampilkan data items
 
     SELECT
         items.name,
@@ -101,7 +101,7 @@ Menampilkan data items yang dilengkapi dengan data nama kategori di masing-masin
 
     Soal No 5
 
-Mengubah data pada tabel items untuk item dengan nama sumsang b50 harganya (price) menjadi 2500000.
+Mengubah data pada tabel items
 
     UPDATE items
     SET price = '2500000'
